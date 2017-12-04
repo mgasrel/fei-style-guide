@@ -1,8 +1,11 @@
 {
   "name": "fei-style-guide",
   "description": "FEI style guide library",
+  "author": {
+    "name": "Mickael Gasrel",
+    "url": "https://github.com/mgasrel"
+  },
   "license": "UNLICENSED",
-  "private": true,
   "version": "2.0.0",
   "devDependencies": {
     "del": "2.x",
