@@ -1,0 +1,39 @@
+{
+  "name": "fei-style-guide",
+  "description": "FEI style guide library",
+  "license": "UNLICENSED",
+  "private": true,
+  "version": "2.0.0",
+  "devDependencies": {
+    "del": "2.x",
+    "gulp": "3.x",
+    "gulp-autoprefixer": "3.x",
+    "gulp-clean": "0.x",
+    "gulp-csscomb": "3.x",
+    "gulp-csso": "2.x",
+    "gulp-less": "0.x",
+    "gulp-options": "1.x",
+    "gulp-preservetime": "1.x",
+    "gulp-rename": "1.x",
+    "gulp-sass": "3.x",
+    "gulp-util": "3.x"
+  },
+  "dependencies": {
+    "animate.css": "3.x",
+    "bootstrap": "4.0.0-beta.2",
+    "holderjs": "2.x",
+    "jquery": "3.x",
+    "popper.js": "1.x",
+    "rainbow-code": "2.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgasrel/fei-style-guide.git"
+  },
+  "sass": "src/scss/fei-theme.scss",
+  "style": "dist/css/fei-theme.css",
+  "files": [
+    "dist",
+    "src/scss/**/*.scss"
+  ]
+}

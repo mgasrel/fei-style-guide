@@ -1,0 +1,42 @@
+SetEnv CI_ENV testing
+
+AuthUserFile /homez.228/humanoidk/preview/fei/style-guide/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Restricted Access"
+AuthType Basic
+Require valid-user
+
+SetOutputFilter DEFLATE
+AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
+
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+
+AddType video/mp4 .mp4
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_URI} ^system.*
+RewriteRule ^(.*)$ /index.php/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+RewriteCond $1 !^(index\.php|images|css|robots\.txt)
+
+ExpiresActive On
+ExpiresDefault A0
+ 
+# 1 YEAR - doesn't change often
+<FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav)$">
+ExpiresDefault A29030400
+</FilesMatch>
+ 
+# 1 WEEK - possible to be changed, unlikely
+<FilesMatch "\.(jpg|jpeg|png|gif|swf)$">
+ExpiresDefault A604800
+</FilesMatch>
+ 
+# 3 HOUR - core content, changes quickly
+<FilesMatch "\.(txt|xml|js|css)$">
+ExpiresDefault A10800
+</FilesMatch>

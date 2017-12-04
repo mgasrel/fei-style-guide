@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en" class="fei fei-theme components">
+<head>
+    <title>Style Guide | FEI</title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type="text/css" rel="stylesheet" media="all" href="vendors/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" media="all" href="vendors/animate.min.css">
+    <link type="text/css" rel="stylesheet" media="all" href="vendors/github.css">
+    <link type="text/css" rel="stylesheet" media="all" href="css/style-guide.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                Style Guide
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.html">CSS</a></li>
+                <li class="active"><a href="components.html">Components</a></li>
+                <li><a href="more.html">More</a></li>
+                <!--li><a href="/variables">Variables</a></li-->
+                <!--li><a href="/demo">Demo</a></li-->
+            </ul>
+        </div>
+    </div>
+</nav></header>
+<div class="container" style="padding-top: 70px;">
+            <aside class="sidebar">
+    <ul class="list-unstyled">
+    <li>
+        <a href="#dropdowns" data-toggle="collapse-menu">Dropdowns</a>
+        <ul class="collapse">
+            <li><a href="#dropdowns-basic">Basic</a></li>
+            <li><a href="#dropdowns-headers">Headers</a></li>
+            <li><a href="#dropdowns-disabled-menu-items">Disabled menu items</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#button-groups" data-toggle="collapse-menu">Button groups</a>
+        <ul class="collapse">
+            <li><a href="#button-groups-basic">Basic</a></li>
+            <li><a href="#button-groups-toolbar">Toolbar</a></li>
+            <li><a href="#button-groups-sizing">Sizing</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#button-dropdowns" data-toggle="collapse-menu">Button dropdowns</a>
+        <ul class="collapse">
+            <li><a href="#button-dropdowns-single">Single</a></li>
+            <li><a href="#button-dropdowns-split">Split</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#input-group">input-group</a>
+    </li>
+    
+    <li>
+        <a href="#navs" data-toggle="collapse-menu">Navs</a>
+        <ul class="collapse">
+            <li><a href="#navs-tabs">Tabs</a></li>
+            <li><a href="#navs-pills">Pills</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#navbar" data-toggle="collapse-menu">Navbar</a>
+        <ul class="collapse">
+            <li><a href="#navbar-default">Default</a></li>
+            <li><a href="#navbar-inverted">Inverted</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#breadcrumbs">Breadcrumbs</a>
+    </li>
+    <li>
+        <a href="#pagination" data-toggle="collapse-menu">Pagination</a>
+        <ul class="collapse">
+            <li><a href="#pagination-default">Default</a></li>
+            <li><a href="#pagination-sizing">Sizing</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#labels" data-toggle="collapse-menu">Labels</a>
+        <ul class="collapse">
+            <li><a href="#labels-example">Example</a></li>
+            <li><a href="#labels-colors">Colors</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#badges" data-toggle="collapse-menu">Badges</a>
+        <ul class="collapse">
+            <li><a href="#badges-basic">Basic</a></li>
+            <li><a href="#badges-examples">Examples</a></li>
+            <li><a href="#badges-colors">Colors</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#page-header">Page header</a>
+    </li>
+    <li>
+        <a href="#thumbnails">Thumbnails</a>
+    </li>   
+    <li>
+        <a href="#alerts" data-toggle="collapse-menu">Alerts</a>
+        <ul class="collapse">
+            <li><a href="#alerts-examples">Examples</a></li>
+            <li><a href="#alerts-dismissable-alerts">Dismissable alerts</a></li>
+            <li><a href="#alerts-links-in-alerts">Links in alerts</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#progressbar" data-toggle="collapse-menu">Progressbar</a>
+    </li>
+    <li>
+        <a href="#list-group" data-toggle="collapse-menu">List group</a>
+        <ul class="collapse">
+            <li><a href="#list-group-basic-example">Basic example</a></li>
+            <li><a href="#list-group-linked-items">Linked items</a></li>
+            <li><a href="#list-group-colors">Colors</a></li>
+            <li><a href="#list-group-custom-content">Custom content</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#panels" data-toggle="collapse-menu">Panels</a>
+        <ul class="collapse">
+            <li><a href="#panels-basic-example">Basic example</a></li>
+            <li><a href="#panels-heading">Heading</a></li>
+            <li><a href="#panels-footer">Footer</a></li>
+            <li><a href="#panels-contextual-alternatives">Contextual alternatives</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#wells">Wells</a>
+    </li>
+    <li>
+        <a href="#modals">Modals</a>
+    </li>
+    <li>
+        <a href="#tabs">Tabs</a>
+    </li>
+    <li>
+        <a href="#tooltips">Tooltips</a>
+    </li>
+    <li>
+        <a href="#popovers">Popovers</a>
+    </li>
+</ul></aside>
+<div class="content-view">
+    <section>
+    <h1 id="dropdowns" class="page-header">Dropdowns</h1>
+
+    <article>
+        <h2 id="dropdowns-basic">Basic</h2>
+
+        <div class="sample">
+            <div class="sample-html sample-dropdowns-basic">
+    <div class="dropdown">
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+            Dropdown <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+            <li role="presentation" class="divider"></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+        </ul>
+    </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="dropdowns-headers">Headers</h2>
+
+        <div class="sample-dropdowns-headers">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle sr-only" type="button" id="dropdownMenu2" data-toggle="dropdown">
+                    Dropdown <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+                    <li role="presentation" class="dropdown-header">Dropdown header</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+                    <li role="presentation" class="divider"></li>
+                    <li role="presentation" class="dropdown-header">Dropdown header</li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <pre class="sample-code">
+            <code data-language="html">
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+        <li role="presentation" class="dropdown-header">Dropdown header</li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+        ...
+    </ul></code>
+        </pre>
+    </article>
+
+    <article>
+        <h2 id="dropdowns-disabled-menu-items">Disabled menu items</h2>
+
+        <div class="sample-dropdowns-disabled-menu-items">
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle sr-only" type="button" id="dropdownMenu3" data-toggle="dropdown">
+                    Dropdown <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Regular link</a></li>
+                    <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another link</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <pre class="sample-code">
+            <code data-language="html">
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Regular link</a></li>
+        <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Disabled link</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another link</a></li>
+    </ul></code>
+        </pre>
+    </article>
+</section>    <section>
+    <h1 id="button-groups" class="page-header">Button groups</h1>
+
+    <article>
+        <h2 id="button-groups-basic">Basic</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <div class="btn-group" role="group" aria-label="Basic">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="button-groups-toolbar">Toolbar</h2>
+
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group" role="group" aria-label="First group">
+                <button type="button" class="btn btn-default">1</button>
+                <button type="button" class="btn btn-default">2</button>
+                <button type="button" class="btn btn-default">3</button>
+                <button type="button" class="btn btn-default">4</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Second group">
+                <button type="button" class="btn btn-default">5</button>
+                <button type="button" class="btn btn-default">6</button>
+                <button type="button" class="btn btn-default">7</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-default">8</button>
+            </div>
+        </div>
+
+        <pre class="sample-code">
+            <code data-language="html">
+    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+        <div class="btn-group" role="group" aria-label="First group">...</div>
+        <div class="btn-group" role="group" aria-label="Second group">...</div>
+        <div class="btn-group" role="group" aria-label="Third group">...</div>
+    </div></code>
+        </pre>
+    </article>
+
+    <article id="button-groups-sizing-example">
+        <h2 id="button-groups-sizing">Sizing</h2>
+
+        <div>
+            <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-default">Middle</button>
+                <button type="button" class="btn btn-default">Right</button>
+            </div>
+
+            <br>
+           <div class="btn-group" role="group" aria-label="Default button group">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-default">Middle</button>
+                <button type="button" class="btn btn-default">Right</button>
+            </div>
+            <br>
+            <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-default">Middle</button>
+                <button type="button" class="btn btn-default">Right</button>
+            </div>
+            <br>
+            <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-default">Middle</button>
+                <button type="button" class="btn btn-default">Right</button>
+            </div>
+        </div>
+
+        <pre class="sample-code">
+            <code data-language="html">
+    <div class="btn-group btn-group-lg" role="group" aria-label="...">...</div>
+    <div class="btn-group" role="group" aria-label="...">...</div>
+    <div class="btn-group btn-group-sm" role="group" aria-label="...">...</div>
+    <div class="btn-group btn-group-xs" role="group" aria-label="...">...</div></code>
+        </pre>
+    </article>
+
+</section>    <section>
+    <h1 id="button-dropdowns" class="page-header">Button dropdowns</h1>
+
+    <article>
+        <h2 id="button-dropdowns-single">Single</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Default <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="button-dropdowns-split">Split</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">Action</button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+        </ul>
+    </div>
+            </div>
+        </div>
+    </article>
+</section>    <section>
+    <h1 id="input-group" class="page-header">Input-group</h1>
+
+    <article>
+
+        <div class="sample">
+            <div class="sample-html">
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+</div>
+            </div>
+        </div>
+    </article>
+    
+    <article>
+        <div class="sample">
+            <div class="sample-html">  
+
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2">
+  <span class="input-group-addon" id="basic-addon2">@example.com</span>
+</div>
+
+            </div>
+        </div>
+    </article>
+    
+    <article>
+        <div class="sample">
+            <div class="sample-html">  
+<div class="input-group">
+  <span class="input-group-addon">$</span>
+  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+  <span class="input-group-addon">.00</span>
+</div>
+
+            </div>
+        </div>
+    </article>
+    
+    <article>
+        <div class="sample">
+            <div class="sample-html">  
+<label for="basic-url">Your vanity URL</label>
+<div class="input-group">
+  <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div> 
+            </div>
+        </div>
+    </article>
+    
+    <article>
+        <div class="sample">
+            <div class="sample-html">    
+<div class="row">
+<div class="col-lg-6">
+<div class="input-group">
+  <span class="input-group-addon">
+    <input type="checkbox" aria-label="...">
+  </span>
+  <input type="text" class="form-control" aria-label="...">
+</div><!-- /input-group -->
+</div><!-- /.col-lg-6 -->
+<div class="col-lg-6">
+<div class="input-group">
+  <span class="input-group-addon">
+    <input type="radio" aria-label="...">
+  </span>
+  <input type="text" class="form-control" aria-label="...">
+</div><!-- /input-group -->
+</div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+			</div>
+        </div>
+    </article>
+    
+</section>    <section>
+    <h1 id="navs" class="page-header">Navs</h1>
+
+    <article>
+        <h2 id="navs-tabs">Tabs</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="navs-pills">Pills</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <ul class="nav nav-pills nav-stacked">
+        <li role="presentation" class="active"><a href="#">Home</a></li>
+        <li role="presentation"><a href="#">Profile</a></li>
+        <li role="presentation"><a href="#">Messages</a></li>
+    </ul>
+            </div>
+        </div>
+    </article>
+</section>    <section>
+    <h1 id="navbar" class="page-header">Navbar</h1>
+
+    <article>
+        <h2 id="navbar-default">Default</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Link</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="navbar-inverted">Inverted</h2>
+
+        <nav class="navbar navbar-inverse" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Brand</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <pre class="sample-code">
+            <code data-language="html">
+    <nav class="navbar navbar-inverse" role="navigation">
+        ...
+    </nav></code>
+        </pre>
+    </article>
+</section>    <section>
+    <h1 id="breadcrumbs" class="page-header">Breadcrumbs</h1>
+
+    <article>
+
+        <ol class="breadcrumb">
+            <li class="active">Home</li>
+        </ol>
+
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Library</li>
+        </ol>
+
+        <div class="sample">
+            <div class="sample-html">
+    <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Library</a></li>
+        <li class="active">Data</li>
+    </ol>
+            </div>
+        </div>
+    </article>
+</section>    <section id="pagination-examples">
+    <h1 id="pagination" class="page-header">Pagination</h1>
+
+    <article>
+        <h2 id="pagination-default">Default</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <ul class="pagination">
+        <li><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+    </ul>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="pagination-sizing">Sizing</h2>
+
+        <div>
+            <ul class="pagination pagination-lg">
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="pagination">
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="pagination pagination-sm">
+                <li><a href="#">«</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+        </div>
+
+        <pre class="sample-code">
+            <code data-language="html">
+    <ul class="pagination pagination-lg">...</ul>
+    <ul class="pagination">...</ul>
+    <ul class="pagination pagination-sm">...</ul></code>
+        </pre>
+    </article>
+</section>    <section>
+    <h1 id="labels" class="page-header">Labels</h1>
+
+    <article>
+        <h2 id="labels-example">Example</h2>
+
+        <h1>Example heading <span class="label label-default">New</span></h1>
+        <h2>Example heading <span class="label label-default">New</span></h2>
+        <h3>Example heading <span class="label label-default">New</span></h3>
+        <h4>Example heading <span class="label label-default">New</span></h4>
+        <h5>Example heading <span class="label label-default">New</span></h5>
+        <h6>Example heading <span class="label label-default">New</span></h6>
+
+        <pre class="sample-code">
+            <code data-language="html">
+    <h3>Example heading <span class="label label-default">New</span></h3></code>
+        </pre>
+    </article>
+
+    <article>
+        <h2 id="labels-colors">Colors</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <span class="label label-default">Default</span>
+    <span class="label label-primary">Primary</span>
+    <span class="label label-secondary">Secondary</span>
+    <span class="label label-success">Success</span>
+    <span class="label label-info">Info</span>
+    <span class="label label-warning">Warning</span>
+    <span class="label label-danger">Danger</span>
+            </div>
+        </div>
+    </article>
+</section>    <section>
+    <h1 id="badges" class="page-header">Badges</h1>
+
+    <article>
+        <h2 id="badges-basic">Basic</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <a href="#">Inbox <span class="badge">42</span></a>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="badges-examples">Examples</h2>
+        <ul class="nav nav-pills">
+            <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Messages <span class="badge">3</span></a></li>
+        </ul>
+        <br>
+        <ul class="nav nav-pills nav-stacked" style="max-width: 260px;">
+            <li class="active">
+                <a href="#">
+                    <span class="badge pull-right">42</span>
+                    Home
+                </a>
+            </li>
+            <li><a href="#">Profile</a></li>
+            <li>
+                <a href="#">
+                    <span class="badge pull-right">3</span>
+                    Messages
+                </a>
+            </li>
+        </ul>
+        <br>
+        <button class="btn btn-primary" type="button">
+            Messages <span class="badge">4</span>
+        </button>
+    </article>
+
+    <article>
+        <h2 id="badges-colors">Colors</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <span class="badge badge-default">1</span>
+    <span class="badge badge-primary">2</span>
+    <span class="badge badge-secondary">3</span>
+    <span class="badge badge-success">4</span>
+    <span class="badge badge-info">5</span>
+    <span class="badge badge-warning">6</span>
+    <span class="badge badge-danger">7</span>
+            </div>
+        </div>
+    </article>
+
+</section>    <section>
+    <h1 id="page-header" class="page-header">Page header</h1>
+
+    <article>
+        <div class="sample">
+            <div class="sample-html">
+    <div class="page-header">
+        <h1>Example page header <small>Subtext for header</small></h1>
+    </div>
+            </div>
+        </div>
+    </article>
+</section>    <section>
+	<h1 id="thumbnails" class="page-header">Thumbnails</h1>
+    
+    <article>
+        <div class="sample">
+            <div class="sample-html">
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/250px-Misc_pollen.jpg" alt="...">
+    </a>
+  </div>
+   <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/250px-Misc_pollen.jpg" alt="...">
+    </a>
+  </div>
+   <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/250px-Misc_pollen.jpg" alt="...">
+    </a>
+  </div>
+   <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/250px-Misc_pollen.jpg" alt="...">
+    </a>
+  </div>
+</div>
+            </div>
+        </div>
+    </article>
+    
+<br><br>    
+    <article>
+        <div class="sample">
+            <div class="sample-html">    
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Misc_pollen.jpg/1024px-Misc_pollen.jpg" alt="..." class="img-responsive">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>Lorem ipsum</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+        </div>
+    </article>    
+    
+    
+</section>    <section>
+    <h1 id="alerts" class="page-header">Alerts</h1>
+
+    <article>
+        <h2 id="alerts-examples">Examples</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <div class="alert alert-success">
+        <strong>Well done!</strong> You successfully read this important alert message.
+    </div>
+    <div class="alert alert-info">
+        <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+    </div>
+    <div class="alert alert-warning">
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+    <div class="alert alert-danger">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+    </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="alerts-dismissable-alerts">Dismissable alerts</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <div class="alert alert-warning alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>Warning!</strong> Better check yourself, you're not looking too good.
+    </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="alerts-links-in-alerts">Links in alerts</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <div class="alert alert-success">
+        <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+    </div>
+    <div class="alert alert-info">
+        <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not important.
+    </div>
+    <div class="alert alert-warning">
+        <strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+    </div>
+    <div class="alert alert-danger">
+        <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+    </div>
+            </div>
+        </div>
+    </article>
+
+
+</section>    <section>
+	<h1 id="progressbar" class="page-header">Progressbar</h1>
+    
+    <article>
+
+        <div class="sample">
+            <div class="sample-html">
+<div class="progress">
+	<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span>
+	</div>
+</div>
+            </div>
+        </div>
+    </article>
+    
+    <br> <br>
+     <article>
+
+        <div class="sample">
+            <div class="sample-html">
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    60%
+  </div>
+</div>
+            </div>
+        </div>
+    </article>
+    
+    <br> <br>
+    <article>
+
+        <div class="sample">
+            <div class="sample-html">
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">20% Complete</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    <span class="sr-only">60% Complete (warning)</span>
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+    <span class="sr-only">80% Complete (danger)</span>
+  </div>
+</div>
+            </div>
+        </div>
+    </article>
+    
+</section>    <section id="list-group-examples">
+    <h1 id="list-group" class="page-header">List group</h1>
+
+    <article>
+        <h2 id="list-group-basic-example">Basic example</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <ul class="list-group">
+        <li class="list-group-item">Cras justo odio</li>
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+        <li class="list-group-item">Morbi leo risus</li>
+        <li class="list-group-item">Porta ac consectetur ac</li>
+        <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="list-group-linked-items">Linked items</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <div class="list-group">
+        <a href="#" class="list-group-item active">
+            Cras justo odio
+        </a>
+        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+        <a href="#" class="list-group-item">Morbi leo risus</a>
+        <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+        <a href="#" class="list-group-item">Vestibulum at eros</a>
+    </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="list-group-colors">Colors</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-success">Dapibus ac facilisis in</li>
+        <li class="list-group-item list-group-item-info">Cras sit amet nibh libero</li>
+        <li class="list-group-item list-group-item-warning">Porta ac consectetur ac</li>
+        <li class="list-group-item list-group-item-danger">Vestibulum at eros</li>
+    </ul>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
+        <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
+        <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
+        <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
+    </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="list-group-custom-content">Custom content</h2>
+
+        <div class="list-group">
+            <a href="#" class="list-group-item active">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+            <a href="#" class="list-group-item">
+                <h4 class="list-group-item-heading">List group item heading</h4>
+                <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+            </a>
+        </div>
+
+        <pre class="sample-code">
+            <code data-language="html">
+    <div class="list-group">
+        <a href="#" class="list-group-item active">
+            <h4 class="list-group-item-heading">List group item heading</h4>
+            <p class="list-group-item-text">...</p>
+        </a>
+    </div></code>
+        </pre>
+    </article>
+
+</section>    <section>
+    <h1 id="panels" class="page-header">Panels</h1>
+
+    <article>
+        <h2 id="panels-basic-example">Basic example</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Basic panel example
+        </div>
+    </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="panels-heading">Heading</h2>
+
+        <div class="sample">
+            <div class="sample-html">
+    <div class="panel panel-default">
+        <div class="panel-heading">Panel heading without title</div>
+        <div class="panel-body">
+            Panel content
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+            Panel content
+        </div>
+    </div>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <h2 id="panels-contextual-alternatives">Contextual alternatives</h2>
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-secondary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title">Panel title</h3>
+            </div>
+            <div class="panel-body">
+                Panel content
+            </div>
+        </div>
+
+        <pre class="sample-code">
+            <code data-language="html">
+    <div class="panel panel-primary">...</div>
+    <div class="panel panel-secondary">...</div>
+    <div class="panel panel-success">...</div>
+    <div class="panel panel-info">...</div>
+    <div class="panel panel-warning">...</div>
+    <div class="panel panel-danger">...</div></code>
+        </pre>
+    </article>
+
+</section>    <section>
+    <h1 id="wells" class="page-header">Wells</h1>
+
+    <article>
+
+        <div class="sample">
+            <div class="sample-html">
+    <div class="well well-sm">Look, I'm in a small well!</div>
+    <div class="well">Look, I'm in a well!</div>
+    <div class="well well-lg">Look, I'm in a large well!</div>
+            </div>
+        </div>
+    </article>
+</section>    <section>
+    <h1 id="modals" class="page-header">Modals</h1>
+
+    <article>
+
+        <div class="sample">
+            <div class="sample-html">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <p>One fine body&hellip;</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </article>
+</section>    <section>
+    <h1 id="tabs" class="page-header">Tabs</h1>
+
+    <article>
+
+        <div class="sample">
+            <div class="sample-html">
+    <div>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">Home content</div>
+            <div role="tabpanel" class="tab-pane" id="profile">Profile content</div>
+            <div role="tabpanel" class="tab-pane" id="messages">Messages content</div>
+            <div role="tabpanel" class="tab-pane" id="settings">Settings content</div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </article>
+</section>    <section>
+    <h1 id="tooltips" class="page-header">Tooltips</h1>
+
+    <article>
+
+        <div class="sample">
+            <div class="sample-html">
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+    <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+            </div>
+        </div>
+    </article>
+</section>    <section>
+    <h1 id="popovers" class="page-header">Popovers</h1>
+
+    <article>
+
+        <div class="sample">
+            <div class="sample-html">
+    <a tabindex="0" class="btn btn-lg btn-default" role="button" data-toggle="popover" data-trigger="focus" title="My popover" data-content="And here's some amazing content. It's very engaging. Right?">Display</a>
+            </div>
+        </div>
+    </article>
+</section></div>    </div>
+<footer>
+        <script type="text/javascript" src="vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="vendors/bootstrap.min.js"></script>
+    <script type="text/javascript" src="vendors/rainbow.min.js"></script>
+    <script type="text/javascript" src="js/style-guide.js"></script>
+</footer>
+</div>
+</body>
+</html>
